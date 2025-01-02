@@ -35,13 +35,13 @@ Example Queries:
 <issuetype = "Test Case">
 
 *  Test Cases Executed in the Current Sprint:
-<issuetype = "Test Case" AND sprint = "Sprint 1" AND status IN ("Done", "In Progress")>
+issuetype = "Test Case" AND sprint = "Sprint 1" AND status IN ("Done", "In Progress")
 
 * Defects by Severity:
-<issuetype = "Bug" AND severity = "Critical">
+issuetype = "Bug" AND severity = "Critical"
 
 *  Defects Resolved in the Last Month:
-<issuetype = "Bug" AND status = "Resolved" AND resolved >= startOfMonth()>
+issuetype = "Bug" AND status = "Resolved" AND resolved >= startOfMonth()
 
 4. Use Dashboards and Gadgets
     - Create personalized dashboards to visualize metrics in real-time.
@@ -58,6 +58,7 @@ Example Gadget Configuration:
 
 Filter: "Open Defects."
 Chart: Pie chart showing defect distribution by severity.
+
 5. Automate Test Reporting
 Automate the generation and delivery of test reports to stakeholders.
 
@@ -66,6 +67,7 @@ Create JQL filters for the metrics you want to report.
 Schedule automatic email delivery using JIRA's subscription feature.
 Visual Reports:
 Use graphs and charts from dashboard gadgets for sprint reviews.
+
 6. Key Test Metrics in JIRA
 Here are some test metrics you can track and how to retrieve them in JIRA:
 
@@ -75,6 +77,7 @@ Defects by Module	Link defects to epics or components in the backlog.
 Defect Resolution Rate	JQL Filter: status = "Resolved".
 Reopened Defects	JQL Filter: status = "Reopened".
 Test Execution Rate	Zephyr/Xray: Execution metrics for test cases.
+
 7. Integrate JIRA with Testing Tools
 JIRA integrates with several tools to provide detailed test metrics:
 
