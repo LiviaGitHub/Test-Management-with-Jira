@@ -57,21 +57,12 @@ Issue Statistics: Displays the number of defects by severity or status.
 Pie Chart: Shows the distribution of defect types or test cases.
 Two-Dimensional Filter Statistics: Combines status and priority or module and severity.
 Created vs. Resolved Chart: Compares defects created and resolved over time.
-Example Gadget Configuration:
 
+Example Gadget Configuration:
 Filter: "Open Defects."
 Chart: Pie chart showing defect distribution by severity.
 
-5. Automate Test Reporting
-Automate the generation and delivery of test reports to stakeholders.
-
-Set Up Report Subscriptions:
-Create JQL filters for the metrics you want to report.
-Schedule automatic email delivery using JIRA's subscription feature.
-Visual Reports:
-Use graphs and charts from dashboard gadgets for sprint reviews.
-
-6. Key Test Metrics in JIRA
+5. Key Test Metrics in JIRA
 Here are some test metrics you can track and how to retrieve them in JIRA:
 
 Metric	How to Retrieve in JIRA
@@ -81,28 +72,15 @@ Defect Resolution Rate	JQL Filter: status = "Resolved".
 Reopened Defects	JQL Filter: status = "Reopened".
 Test Execution Rate	Zephyr/Xray: Execution metrics for test cases.
 
-7. Integrate JIRA with Testing Tools
+6. Integrate JIRA with Testing Tools
 JIRA integrates with several tools to provide detailed test metrics:
 
-Zephyr for JIRA:
-Allows you to create, execute, and track test cases.
-Reports include execution metrics and test results.
-Xray for JIRA:
-Offers a robust interface for managing tests and generating reports.
-Metrics: test coverage, execution progress, and traceability.
-Integration with Jenkins/Selenium:
-Automatically log automated test results in JIRA.
-Example: Configure Jenkins to report failed tests as defects in JIRA.
-Practical Example
-Scenario: You want to measure test coverage and defect resolution rates.
-Step 1: JQL Filter
+- Zephyr for JIRA:
+  - Allows you to create, execute, and track test cases.
+    - Reports include execution metrics and test results.
 
-Test cases executed:
-issuetype = "Test Case" AND status = "Executed"
-Resolved defects:
-issuetype = "Bug" AND status = "Resolved" AND resolved >= startOfWeek()
-Step 2: Dashboard
+- Xray for JIRA:
+  - Offers a robust interface for managing tests and generating reports.
+  - Metrics: test coverage, execution progress, and traceability.
 
-Gadget: Pie Chart for defect severity distribution.
-Gadget: Two-Dimensional Filter Statistics for execution progress by sprint.
 By strategically using JIRA with filters, dashboards, and integrations, you can obtain clear and actionable test metrics to enhance software quality.
