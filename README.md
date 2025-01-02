@@ -3,7 +3,7 @@ Manage test cases and bugs effectively with Jira
 
 To use JIRA for obtaining test metrics, you need to configure it effectively and integrate it with testing tools to gather data on test cases, defects, coverage, and quality. Here's a step-by-step guide to using JIRA for test metrics:
 
-## 1. Configure JIRA to Manage Test Cases
+1. Configure JIRA to Manage Test Cases
 While JIRA is primarily designed for project and issue tracking, you can configure it to handle test cases:
 
 -> Create Custom Issue Types:
